@@ -16,7 +16,7 @@ usersRoute.post('/users', (req: Request, res: Response) => {
   res.status(201).send(req.body)
 })
 
-usersRoute.put('/users/:uuid', (req: Request<{ uuid: string }>, res: Response) => {
+usersRoute.put('/users/:uuid', (req: Request, res: Response) => {
   const modifiedUser = req.body
   res.status(200).send(modifiedUser)
 })
